@@ -1,11 +1,13 @@
+import { Route, Routes } from "react-router";
 import "./App.css";
+import HomePage from "./features/dashboard/pages/homepage/HomePage";
 
 function App() {
   return (
     <>
-      <div className="text-3xl font-bold underline">
-        Özel Fidanlar Eğitim ve Rehabilitasyon Merkezi
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+      </Routes>
     </>
   );
 }
