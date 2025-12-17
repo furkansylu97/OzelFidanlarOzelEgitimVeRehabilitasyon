@@ -1,11 +1,13 @@
-import './App.css'
+import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>Özel Fidanlar Eğitim ve Rehabilitasyon Merkezi</h1>
+      <div className="text-3xl font-bold underline">
+        Özel Fidanlar Eğitim ve Rehabilitasyon Merkezi
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
