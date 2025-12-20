@@ -5,7 +5,6 @@ interface HeaderInfoItemProps {
   title: string;
   children: React.ReactNode;
   iconClassName?: string;
-  containerClassName?: string;
 }
 
 const HeaderInfoItem: React.FC<HeaderInfoItemProps> = ({
@@ -16,10 +15,12 @@ const HeaderInfoItem: React.FC<HeaderInfoItemProps> = ({
 }) => {
   return (
     <div className="flex items-center">
-      <div className="bg-[#081c7b] border-2 border-[#74ae38] rounded-full w-12 h-12 flex justify-center items-center">
+      <div
+        className="bg-[#081c7b] border-2 border-[#74ae38] rounded-full w-12 h-12 flex justify-center items-center aspect-square shrink-0"
+      >
         <img src={icon} alt={`${title} Icon`} className={iconClassName} />
       </div>
-      <div className="text-white text-sm ml-3">
+      <div className="text-white text-sm ml-3 shrink-0 whitespace-normal">
         <div className="font-medium">{title}</div>
         {children}
       </div>

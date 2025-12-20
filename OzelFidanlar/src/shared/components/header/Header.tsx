@@ -10,10 +10,10 @@ export const Header = () => {
   return (
     <>
       <header>
-        <div className="header-wrapper bg-[#001064] h-44 flex items-center">
-          <div className="grid grid-cols-[35%_65%] container mx-32">
+        <div className="header-wrapper w-full bg-[#001064] flex h-44 items-center justify-center">
+          <div className="container flex justify-between px-20 mx-auto">
             <div className="flex items-center">
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center aspect-square shrink-0">
                 <Link to="/">
                   <img
                     src={HeaderLogo}
@@ -22,13 +22,13 @@ export const Header = () => {
                   />
                 </Link>
               </div>
-              <div className="text-white text-sm font-bold">
+              <div className="text-white text-sm font-semibold shrink-0 whitespace-normal">
                 Özel Fidanlar <br />
                 Özel Eğitim Ve <br />
                 Rehabilitasyon Merkezi
               </div>
             </div>
-            <div className="grid grid-cols-[33%_27%_40%] gap-8">
+            <div className="md:flex hidden justify-between gap-8">
               <HeaderInfoItem icon={Mail} title="Email">
                 <a href="mailto:pendikfidanlar@gmail.com">
                   pendikfidanlar@gmail.com
@@ -39,7 +39,11 @@ export const Header = () => {
                 <a href="tel:+905526584455">+90 552 658 44 55</a>
               </HeaderInfoItem>
 
-              <HeaderInfoItem icon={Location} title="Adres" iconClassName="w-8 h-8">
+              <HeaderInfoItem
+                icon={Location}
+                title="Adres"
+                iconClassName="w-8 h-8"
+              >
                 <a
                   href="https://www.google.com/maps?q=Özel+Fidanlar+Özel+Eğitim+Ve+Rehabilitasyon+Merkezi"
                   target="_blank"
