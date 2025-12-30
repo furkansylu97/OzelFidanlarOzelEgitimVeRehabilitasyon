@@ -6,55 +6,59 @@ import Mail from "../../../assets/icons/mail.svg";
 import Phone from "../../../assets/icons/phone.svg";
 import Location from "../../../assets/icons/map.svg";
 import { Container } from "../container/Container";
+import Navbar from "./navbar/Navbar";
 
 export const Header = () => {
   return (
     <>
-      <header className="w-full bg-[#001064] flex h-36 items-center justify-center">
-        <Container className="justify-between">
-          <div className="flex items-center">
-            <div className="flex justify-center items-center aspect-square shrink-0">
-              <Link to="/">
-                <img
-                  src={HeaderLogo}
-                  alt="Özel Fidanlar Logo"
-                  className="w-20 h-20"
-                />
-              </Link>
+      <div className="w-full flex-col">
+        <header className="w-full bg-[#001064] flex h-40 items-center justify-center">
+          <Container className="justify-between">
+            <div className="flex items-center">
+              <div className="flex justify-center items-center aspect-square shrink-0">
+                <Link to="/">
+                  <img
+                    src={HeaderLogo}
+                    alt="Özel Fidanlar Logo"
+                    className="w-20 h-20"
+                  />
+                </Link>
+              </div>
+              <div className="text-white text-sm font-semibold shrink-0 whitespace-normal">
+                Özel Fidanlar <br />
+                Özel Eğitim Ve <br />
+                Rehabilitasyon Merkezi
+              </div>
             </div>
-            <div className="text-white text-sm font-semibold shrink-0 whitespace-normal">
-              Özel Fidanlar <br />
-              Özel Eğitim Ve <br />
-              Rehabilitasyon Merkezi
-            </div>
-          </div>
-          <div className="md:flex hidden justify-between gap-8">
-            <HeaderInfoItem icon={Mail} title="Email">
-              <a href="mailto:pendikfidanlar@gmail.com">
-                pendikfidanlar@gmail.com
-              </a>
-            </HeaderInfoItem>
+            <div className="md:flex hidden justify-between gap-8">
+              <HeaderInfoItem icon={Mail} title="Email">
+                <a href="mailto:pendikfidanlar@gmail.com">
+                  pendikfidanlar@gmail.com
+                </a>
+              </HeaderInfoItem>
 
-            <HeaderInfoItem icon={Phone} title="Telefon">
-              <a href="tel:+905526584455">+90 552 658 44 55</a>
-            </HeaderInfoItem>
+              <HeaderInfoItem icon={Phone} title="Telefon">
+                <a href="tel:+905526584455">+90 552 658 44 55</a>
+              </HeaderInfoItem>
 
-            <HeaderInfoItem
-              icon={Location}
-              title="Adres"
-              iconClassName="w-8 h-8"
-            >
-              <a
-                href="https://www.google.com/maps?q=Özel+Fidanlar+Özel+Eğitim+Ve+Rehabilitasyon+Merkezi"
-                target="_blank"
-                rel="noopener noreferrer"
+              <HeaderInfoItem
+                icon={Location}
+                title="Adres"
+                iconClassName="w-8 h-8"
               >
-                Pendik, İstanbul
-              </a>
-            </HeaderInfoItem>
-          </div>
-        </Container>
-      </header>
+                <a
+                  href="https://www.google.com/maps?q=Özel+Fidanlar+Özel+Eğitim+Ve+Rehabilitasyon+Merkezi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pendik, İstanbul
+                </a>
+              </HeaderInfoItem>
+            </div>
+          </Container>
+        </header>
+        <Navbar />
+      </div>
     </>
   );
 };
