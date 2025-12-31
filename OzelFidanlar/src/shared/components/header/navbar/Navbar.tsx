@@ -7,15 +7,15 @@ import { socialLinks } from "./SocialLinks";
 const Navbar = () => {
   return (
     <nav>
-      <div className="flex h-16 w-full items-center justify-center bg-[#001064]/25">
+      <div className="flex h-16 w-full items-center justify-center bg-[#001064]/50">
         <Container>
-          <div className="flex w-full items-center justify-between text-white">
-            <ul className="flex p-4 gap-4">
+          <div className="flex w-full items-center justify-between text-white font-semibold">
+            <ul className="flex items-center px-4 gap-4">
               {navData.map((item) => (
                 <NavItem key={item.label} item={item} />
               ))}
             </ul>
-            <div className="flex gap-5">
+            <div className="flex items-center gap-5">
               {socialLinks.map(({ href, icon, alt }) => (
                 <a
                   key={alt}

@@ -32,13 +32,21 @@ export const Header = () => {
             </div>
             <div className="md:flex hidden justify-between gap-8">
               <HeaderInfoItem icon={Mail} title="Email">
-                <a href="mailto:pendikfidanlar@gmail.com">
+                <a
+                  href="mailto:pendikfidanlar@gmail.com"
+                  className="transition-colors duration-200 hover:text-[#74ae38]"
+                >
                   pendikfidanlar@gmail.com
                 </a>
               </HeaderInfoItem>
 
               <HeaderInfoItem icon={Phone} title="Telefon">
-                <a href="tel:+905526584455">+90 552 658 44 55</a>
+                <a
+                  href="tel:+905526584455"
+                  className="transition-colors duration-200 hover:text-[#74ae38]"
+                >
+                  +90 552 658 44 55
+                </a>
               </HeaderInfoItem>
 
               <HeaderInfoItem
@@ -50,6 +58,7 @@ export const Header = () => {
                   href="https://www.google.com/maps?q=Özel+Fidanlar+Özel+Eğitim+Ve+Rehabilitasyon+Merkezi"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="transition-colors duration-200 hover:text-[#74ae38]"
                 >
                   Pendik, İstanbul
                 </a>

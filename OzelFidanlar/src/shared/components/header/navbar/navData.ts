@@ -28,38 +28,70 @@ export const navData: NavItemType[] = [
     to: "/trainings",
     children: [
       {
-        label: "Özel Eğitim Hizmetleri",
-        to: "/trainings/special-education",
+        label: "Özgül Öğrenme Güçlüğü",
+        to: "/trainings/special-learning-disability",
         children: [
           {
-            label: "Özel Öğrenme Güçlüğü",
-            to: "/trainings/special-education/special-learning-disability",
+            label: "Özgül Öğrenme Güçlüğü Nedir",
+            to: "/trainings/special-learning-disability/what-is",
           },
           {
-            label: "Dil ve Konuşma Bozuklukları",
-            to: "/trainings/special-education/speech-and-language-disorders",
+            label: "Özgül Öğrenme Güçlüğü Belirtileri Nelerdir",
+            to: "/trainings/special-learning-disability/symptoms",
           },
           {
-            label: "Otizm Spektrum Bozukluğu",
-            to: "/trainings/special-education/autism-spectrum-disorder",
-          },
-          {
-            label: "Dikkat Eksikliği ve Hiperaktivite Bozukluğu",
-            to: "/trainings/special-education/adhd",
-          },
-          {
-            label: "Zihinsel Yetersizlik",
-            to: "/trainings/special-education/intellectual-disability",
-          },
-          {
-            label: "Down Sendromu",
-            to: "/trainings/special-education/down-syndrome",
-          },
-          {
-            label: "Ergoterapi",
-            to: "/trainings/special-education/occupational-therapy",
+            label: "Disleksi ve Çeşitleri",
+            to: "/trainings/special-learning-disability/dyslexia-types",
           },
         ],
+      },
+      {
+        label: "Dil ve Konuşma Bozuklukları",
+        to: "/trainings/speech-and-language-disorders",
+        children: [
+          {
+            label: "Dil ve Konuşma Bozukluğu Nedir",
+            to: "/trainings/speech-and-language-disorders/what-is",
+          },
+          {
+            label: "Dil ve Konuşma Bozukluğu Çeşitleri",
+            to: "/trainings/speech-and-language-disorders/types",
+          },
+        ],
+      },
+      {
+        label: "Otizm Spektrum Bozukluğu",
+        to: "/trainings/autism-spectrum-disorder",
+        children: [
+          {
+            label: "Otizm Spektrum Bozukluğu Nedir",
+            to: "/trainings/autism-spectrum-disorder/what-is",
+          },
+          {
+            label: "Otizm Spektrum Bozukluğu Belirtileri Nelerdir",
+            to: "/trainings/autism-spectrum-disorder/symptoms",
+          },
+          {
+            label: "Otizm Spektrum Bozukluğunun Nedeni Nelerdir",
+            to: "/trainings/autism-spectrum-disorder/causes",
+          },
+        ],
+      },
+      {
+        label: "Dikkat Eksikliği ve Hiperaktivite Bozukluğu",
+        to: "/trainings/adhd",
+      },
+      {
+        label: "Zihinsel Yetersizlik",
+        to: "/trainings/intellectual-disability",
+      },
+      {
+        label: "Down Sendromu",
+        to: "/trainings/down-syndrome",
+      },
+      {
+        label: "Ergoterapi",
+        to: "/trainings/occupational-therapy",
       },
     ],
   },
