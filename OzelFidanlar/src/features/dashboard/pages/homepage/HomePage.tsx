@@ -1,11 +1,10 @@
 import React from "react";
+import HeroSection from "../../sections/HeroSection";
 
 const HomePage = () => {
   return (
     <>
-      <div className="text-3xl font-bold underline">
-        Özel Fidanlar Eğitim ve Rehabilitasyon Merkezi
-      </div>
+      <HeroSection />
     </>
   );
 };

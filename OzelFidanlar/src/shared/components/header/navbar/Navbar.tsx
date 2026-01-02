@@ -6,7 +6,7 @@ import { socialLinks } from "./SocialLinks";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="absolute top-40 left-0 w-full z-20">
       <div className="flex h-16 w-full items-center justify-center bg-[#001064]/50">
         <Container>
           <div className="flex w-full items-center justify-between text-white font-semibold">
