@@ -15,7 +15,7 @@ const Navbar = () => {
                 <NavItem key={item.label} item={item} />
               ))}
             </ul>
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-3">
               {socialLinks.map(({ href, icon, alt }) => (
                 <a
                   key={alt}
