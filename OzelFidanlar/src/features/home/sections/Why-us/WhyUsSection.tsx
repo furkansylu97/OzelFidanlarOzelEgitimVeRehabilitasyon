@@ -5,7 +5,7 @@ import { Container } from "../../../../shared/components/container/Container";
 
 const WhyUsSection = () => {
   return (
-    <section className="flex justify-center w-full bg-gray-50 my-10">
+    <section className="flex justify-center w-full bg-gray-50">
       <Container>
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col justify-center">

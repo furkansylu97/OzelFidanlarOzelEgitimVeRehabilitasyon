@@ -8,7 +8,7 @@ interface WhyUsItemProps {
 
 const WhyUsItem = ({ icon: Icon, title, description }: WhyUsItemProps) => {
   return (
-    <div className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+    <div className="group relative overflow-hidden max-w-md rounded-2xl border-2 border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
       <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
         <div className="absolute -inset-1 rounded-2xl bg-linear-to-br from-[#001064]/20 via-amber-200/20 to-transparent blur-xl" />
       </div>
