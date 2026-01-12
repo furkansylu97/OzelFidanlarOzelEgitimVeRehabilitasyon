@@ -10,7 +10,7 @@ const WhyUsSection = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col justify-center">
             <div className="flex items-center justify-center">
-              <h2 className="inline-block font-bold text-2xl text-gray-900 bg-[#001064]/10 border-l-4 border-amber-300 border-solid">
+              <h2 className="inline-block pl-1 font-bold text-2xl text-gray-900 bg-[#001064]/10 border-l-4 border-amber-300 border-solid">
                 Neden Fidanlar
               </h2>
             </div>

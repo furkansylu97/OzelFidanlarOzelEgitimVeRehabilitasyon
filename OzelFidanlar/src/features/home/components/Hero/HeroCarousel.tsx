@@ -60,7 +60,7 @@ const HeroCarousel: FC<HeroCarouselProps> = ({ slides }) => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="h-[calc(var(--viewport-height)-10rem)] w-full object-fill"
+              className="h-[calc(var(--viewport-height)-10rem)] w-full object-cover"
             />
             <div
               className="absolute inset-0 flex justify-center"
