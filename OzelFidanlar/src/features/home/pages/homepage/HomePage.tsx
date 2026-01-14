@@ -4,6 +4,7 @@ import WhyUsSection from "../../sections/Why-us/WhyUsSection";
 import { useFixedHeroHeight } from "../../../../shared/hooks/HeroHeight/useFixedHeroHeight";
 import AboutSection from "../../sections/About-us/AboutSection";
 import TeamSection from "../../sections/Team/TeamSection";
+import ContactSection from "../../sections/Contact/ContactSection";
 
 const HomePage = () => {
   useFixedHeroHeight();
@@ -17,6 +18,8 @@ const HomePage = () => {
       <AboutSection />
       <section aria-hidden className="h-10" />
       <TeamSection />
+      <section aria-hidden className="h-10" />
+      <ContactSection />
       <section aria-hidden className="h-10" />
     </>
   );
