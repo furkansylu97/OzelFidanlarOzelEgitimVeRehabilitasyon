@@ -5,6 +5,7 @@ import { useFixedHeroHeight } from "../../../../shared/hooks/HeroHeight/useFixed
 import AboutSection from "../../sections/About-us/AboutSection";
 import TeamSection from "../../sections/Team/TeamSection";
 import ContactSection from "../../sections/Contact/ContactSection";
+import BlogSection from "../../sections/Blog/BlogSection";
 
 const HomePage = () => {
   useFixedHeroHeight();
@@ -20,6 +21,8 @@ const HomePage = () => {
       <TeamSection />
       <section aria-hidden className="h-10" />
       <ContactSection />
+      <section aria-hidden className="h-10" />
+      <BlogSection />
       <section aria-hidden className="h-10" />
     </>
   );
