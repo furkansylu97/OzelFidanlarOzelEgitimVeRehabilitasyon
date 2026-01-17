@@ -6,6 +6,7 @@ import AboutSection from "../../sections/About-us/AboutSection";
 import TeamSection from "../../sections/Team/TeamSection";
 import ContactSection from "../../sections/Contact/ContactSection";
 import BlogSection from "../../sections/Blog/BlogSection";
+import { Footer } from "../../../../shared/components/footer/Footer";
 
 const HomePage = () => {
   useFixedHeroHeight();
@@ -24,6 +25,7 @@ const HomePage = () => {
       <section aria-hidden className="h-10" />
       <BlogSection />
       <section aria-hidden className="h-10" />
+      <Footer />
     </>
   );
 };
