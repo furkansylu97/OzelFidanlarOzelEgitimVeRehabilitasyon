@@ -20,8 +20,8 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: 2,
-    name: "Mehmet Aksoy",
-    role: "Özel Eğitim Öğretmeni",
+    name: "Nihal Sarıpınar",
+    role: "Dil ve Konuşma Terapisti",
     image: user2,
     isFeatured: true,
   },
