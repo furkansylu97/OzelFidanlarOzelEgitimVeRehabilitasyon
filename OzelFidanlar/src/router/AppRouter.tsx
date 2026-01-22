@@ -3,6 +3,7 @@ import MainLayout from "../layouts/mainlayout/MainLayout";
 import HomePage from "../features/home/pages/homepage/HomePage";
 import AboutPage from "../features/home/pages/aboutpage/AboutPage";
 import AboutUsPage from "../features/home/pages/aboutuspage/AboutUsPage";
+import TeamPage from "../features/home/pages/teampage/TeamPage";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
           {
             path: "us",
             element: <AboutUsPage />,
+          },
+          {
+            path: "team",
+            element: <TeamPage />
           },
         ],
       },
