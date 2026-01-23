@@ -4,6 +4,7 @@ import HomePage from "../features/home/pages/homepage/HomePage";
 import AboutPage from "../features/home/pages/aboutpage/AboutPage";
 import AboutUsPage from "../features/home/pages/aboutuspage/AboutUsPage";
 import TeamPage from "../features/home/pages/teampage/TeamPage";
+import TrainingsPage from "../features/home/pages/trainingspage/TrainingsPage";
 
 export const router = createBrowserRouter([
   {
@@ -27,7 +28,16 @@ export const router = createBrowserRouter([
           },
           {
             path: "team",
-            element: <TeamPage />
+            element: <TeamPage />,
+          },
+        ],
+      },
+      {
+        path: "trainings",
+        children: [
+          {
+            index: true,
+            element: <TrainingsPage />,
           },
         ],
       },
