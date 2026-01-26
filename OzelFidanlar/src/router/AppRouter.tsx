@@ -7,6 +7,7 @@ import TeamPage from "../features/home/pages/teampage/TeamPage";
 import TrainingsPage from "../features/home/pages/trainingspage/TrainingsPage";
 import SpecialLearningDisabilityPage from "../features/home/pages/special-learning-disability-page/SpecialLearningDisabilityPage";
 import SpecialLearningDisabilityWhatIsPage from "../features/home/pages/special-learning-disability-what-is-page/SpecialLearningDisabilityWhatIsPage";
+import SpecialLearningDisabilitySymptomsPage from "../features/home/pages/special-learning-disability-symptoms-page/SpecialLearningDisabilitySymptomsPage";
 
 export const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ export const router = createBrowserRouter([
               {
                 path: "what-is",
                 element: <SpecialLearningDisabilityWhatIsPage />,
+              },
+              {
+                path: "symptoms",
+                element: <SpecialLearningDisabilitySymptomsPage />,
               },
             ],
           },
