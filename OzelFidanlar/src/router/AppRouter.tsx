@@ -11,6 +11,7 @@ import SpecialLearningDisabilitySymptomsPage from "../features/home/pages/specia
 import DyslexiaAndTypesPage from "../features/home/pages/dyslexia-and-types-page/DyslexiaAndTypesPage";
 import LanguageAndSpeechDisordersPage from "../features/home/pages/language-and-speech-disorders/LanguageAndSpeechDisordersPage";
 import LanguageAndSpeechDisorderWhatIsPage from "../features/home/pages/language-and-speech-disorders-what-is-page/LanguageAndSpeechDisorderWhatIsPage";
+import LanguageAndSpeechDisorderTypesPage from "../features/home/pages/language-and-speech-disorder-types-page/LanguageAndSpeechDisorderTypesPage";
 
 export const router = createBrowserRouter([
   {
@@ -76,6 +77,10 @@ export const router = createBrowserRouter([
               {
                 path: "what-is",
                 element: <LanguageAndSpeechDisorderWhatIsPage />,
+              },
+              {
+                path: "types",
+                element: <LanguageAndSpeechDisorderTypesPage />,
               },
             ],
           },
