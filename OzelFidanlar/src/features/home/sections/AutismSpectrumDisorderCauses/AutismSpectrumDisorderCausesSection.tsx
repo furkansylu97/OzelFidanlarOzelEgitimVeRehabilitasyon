@@ -1,10 +1,10 @@
 import React from "react";
 import asdImage from "../../../../assets/images/home/hero/slide-4.jpg";
-import { autismSpectrumDisorderSymptoms } from "../../data/AutismSpectrumDisorderSymptoms/autismSpectrumDisorderSymptoms";
+import { autismSpectrumDisorderCauses } from "../../data/AutismSpectrumDisorderCauses/autismSpectrumDisorderCauses";
 
-const AutismSpectrumDisorderSymptomsSection: React.FC = () => {
+const AutismSpectrumDisorderCausesSection: React.FC = () => {
   const { hero, intro, paragraphs, highlights, closing } =
-    autismSpectrumDisorderSymptoms;
+    autismSpectrumDisorderCauses;
 
   return (
     <section className="relative w-full">
@@ -19,7 +19,7 @@ const AutismSpectrumDisorderSymptomsSection: React.FC = () => {
 
       <div className="relative -mt-32 flex justify-center">
         <div className="w-full max-w-3xl rounded-sm bg-white p-10 shadow-xl shadow-gray-500">
-          <h2 className="mb-10 inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-3xl font-bold text-gray-900">
+          <h2 className="mb-10 inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-2xl font-bold text-gray-900">
             {hero.title}
           </h2>
 
@@ -77,4 +77,4 @@ const AutismSpectrumDisorderSymptomsSection: React.FC = () => {
   );
 };
 
-export default AutismSpectrumDisorderSymptomsSection;
+export default AutismSpectrumDisorderCausesSection;
