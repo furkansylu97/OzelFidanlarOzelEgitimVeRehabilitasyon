@@ -12,6 +12,7 @@ import DyslexiaAndTypesPage from "../features/home/pages/dyslexia-and-types-page
 import LanguageAndSpeechDisordersPage from "../features/home/pages/language-and-speech-disorders/LanguageAndSpeechDisordersPage";
 import LanguageAndSpeechDisorderWhatIsPage from "../features/home/pages/language-and-speech-disorders-what-is-page/LanguageAndSpeechDisorderWhatIsPage";
 import LanguageAndSpeechDisorderTypesPage from "../features/home/pages/language-and-speech-disorder-types-page/LanguageAndSpeechDisorderTypesPage";
+import AutismSpectrumDisorderPage from "../features/home/pages/autism-spectrum-disorder-page/AutismSpectrumDisorderPage";
 
 export const router = createBrowserRouter([
   {
@@ -81,6 +82,15 @@ export const router = createBrowserRouter([
               {
                 path: "types",
                 element: <LanguageAndSpeechDisorderTypesPage />,
+              },
+            ],
+          },
+          {
+            path: "autism-spectrum-disorder",
+            children: [
+              {
+                index: true,
+                element: <AutismSpectrumDisorderPage />,
               },
             ],
           },
