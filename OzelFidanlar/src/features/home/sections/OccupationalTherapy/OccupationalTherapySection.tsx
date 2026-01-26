@@ -1,16 +1,15 @@
 import React from "react";
-import asdImage from "../../../../assets/images/home/hero/slide-4.jpg";
-import { autismSpectrumDisorderWhatIs } from "../../data/AutismSpectrumDisorderWhatIs/autismSpectrumDisorderWhatIs";
+import occupationalTherapyImage from "../../../../assets/images/home/hero/slide-8.jpg";
+import { occupationalTherapy } from "../../data/OccupationalTherapy/occupationalTherapy";
 
-const AutismSpectrumDisorderWhatIsSection: React.FC = () => {
-  const { hero, intro, paragraphs, highlights, closing } =
-    autismSpectrumDisorderWhatIs;
+const OccupationalTherapySection: React.FC = () => {
+  const { hero, intro, paragraphs, highlights, closing } = occupationalTherapy;
 
   return (
     <section className="relative w-full">
       <div className="relative w-full overflow-hidden">
         <img
-          src={asdImage}
+          src={occupationalTherapyImage}
           alt={hero.imageAlt}
           className="h-[calc(var(--viewport-height)*0.7)] w-full object-cover"
         />
@@ -29,7 +28,7 @@ const AutismSpectrumDisorderWhatIsSection: React.FC = () => {
             ))}
           </div>
 
-          <div className="space-y-6 text-lg leading-relaxed text-gray-600 mt-6">
+          <div className="mt-6 space-y-6 text-lg leading-relaxed text-gray-600">
             {paragraphs.map((text, i) => (
               <p key={i}>{text}</p>
             ))}
@@ -47,10 +46,11 @@ const AutismSpectrumDisorderWhatIsSection: React.FC = () => {
                     <div className="mt-1 text-amber-300 transition-colors duration-300 group-hover:text-[#001064]">
                       <Icon className="h-10 w-10 transition-transform group-hover:scale-110" />
                     </div>
+
                     <div className="px-2">
-                      <h2 className="text-xl font-semibold text-gray-800">
+                      <h3 className="text-xl font-semibold text-gray-800">
                         {item.title}
-                      </h2>
+                      </h3>
                       <p className="my-2 text-lg text-gray-600">{item.text}</p>
                     </div>
                   </div>
@@ -77,4 +77,4 @@ const AutismSpectrumDisorderWhatIsSection: React.FC = () => {
   );
 };
 
-export default AutismSpectrumDisorderWhatIsSection;
+export default OccupationalTherapySection;

@@ -17,9 +17,9 @@ const LanguageAndSpeechDisordersSection = () => {
 
       <div className="relative -mt-32 flex justify-center">
         <div className="w-full max-w-3xl rounded-sm bg-white p-10 shadow-xl shadow-gray-500">
-          <h2 className="mb-10 inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-3xl font-bold text-gray-900">
+          <h1 className="mb-10 inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-3xl font-bold text-gray-900">
             Dil ve Konuşma Bozuklukları
-          </h2>
+          </h1>
 
           <p className="text-lg leading-relaxed text-gray-600">
             Dil ve konuşma bozuklukları; bireyin dili anlama, ifade etme,

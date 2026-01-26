@@ -18,9 +18,9 @@ const DyslexiaAndTypesSection: React.FC = () => {
 
       <div className="relative -mt-32 flex justify-center">
         <div className="w-full max-w-3xl rounded-sm bg-white p-10 shadow-xl shadow-gray-500">
-          <h1 className="mb-10 inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-3xl font-bold text-gray-900">
+          <h2 className="mb-10 inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-2xl font-bold text-gray-900">
             {hero.title}
-          </h1>
+          </h2>
 
           <div className="space-y-6 text-lg leading-relaxed text-gray-600">
             {intro.map((text, i) => (
@@ -35,9 +35,9 @@ const DyslexiaAndTypesSection: React.FC = () => {
           </div>
 
           <div className="my-5">
-            <h1 className="inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-3xl font-bold text-gray-900">
+            <h2 className="inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-2xl font-bold text-gray-900">
               Disleksi Çeşitleri
-            </h1>
+            </h2>
           </div>
 
           <div className="flex items-center justify-center">
