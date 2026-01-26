@@ -14,6 +14,7 @@ import LanguageAndSpeechDisorderWhatIsPage from "../features/home/pages/language
 import LanguageAndSpeechDisorderTypesPage from "../features/home/pages/language-and-speech-disorder-types-page/LanguageAndSpeechDisorderTypesPage";
 import AutismSpectrumDisorderPage from "../features/home/pages/autism-spectrum-disorder-page/AutismSpectrumDisorderPage";
 import AutismSpectrumDisorderWhatIsPage from "../features/home/pages/autism-spectrum-disorder-what-is-page/AutismSpectrumDisorderWhatIsPage";
+import AutismSpectrumDisorderSymptomsPage from "../features/home/pages/autism-spectrum-disorder-symptoms-page/AutismSpectrumDisorderSymptomsPage";
 
 export const router = createBrowserRouter([
   {
@@ -96,6 +97,10 @@ export const router = createBrowserRouter([
               {
                 path: "what-is",
                 element: <AutismSpectrumDisorderWhatIsPage />,
+              },
+              {
+                path: "symptoms",
+                element: <AutismSpectrumDisorderSymptomsPage />,
               },
             ],
           },
