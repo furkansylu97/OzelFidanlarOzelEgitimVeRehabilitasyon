@@ -17,6 +17,7 @@ import AutismSpectrumDisorderWhatIsPage from "../features/home/pages/autism-spec
 import AutismSpectrumDisorderSymptomsPage from "../features/home/pages/autism-spectrum-disorder-symptoms-page/AutismSpectrumDisorderSymptomsPage";
 import AutismSpectrumDisorderCausesPage from "../features/home/pages/autism-spectrum-disorder-causes-page/AutismSpectrumDisorderCausesPage";
 import AttentionDeficitHyperactivityDisorderPage from "../features/home/pages/attention-deficit-hyperactivity-disorder-page/AttentionDeficitHyperactivityDisorderPage";
+import IntellectualDisabilityPage from "../features/home/pages/intellectual-disability-page/IntellectualDisabilityPage";
 
 export const router = createBrowserRouter([
   {
@@ -113,6 +114,10 @@ export const router = createBrowserRouter([
           {
             path: "adhd",
             element: <AttentionDeficitHyperactivityDisorderPage />,
+          },
+          {
+            path: "intellectual-disability",
+            element: <IntellectualDisabilityPage />,
           },
         ],
       },
