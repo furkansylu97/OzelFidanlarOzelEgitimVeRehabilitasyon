@@ -9,6 +9,7 @@ import SpecialLearningDisabilityPage from "../features/home/pages/special-learni
 import SpecialLearningDisabilityWhatIsPage from "../features/home/pages/special-learning-disability-what-is-page/SpecialLearningDisabilityWhatIsPage";
 import SpecialLearningDisabilitySymptomsPage from "../features/home/pages/special-learning-disability-symptoms-page/SpecialLearningDisabilitySymptomsPage";
 import DyslexiaAndTypesPage from "../features/home/pages/dyslexia-and-types-page/DyslexiaAndTypesPage";
+import LanguageAndSpeechDisordersPage from "../features/home/pages/language-and-speech-disorders/LanguageAndSpeechDisordersPage";
 
 export const router = createBrowserRouter([
   {
@@ -61,6 +62,15 @@ export const router = createBrowserRouter([
               {
                 path: "dyslexia-types",
                 element: <DyslexiaAndTypesPage />,
+              },
+            ],
+          },
+          {
+            path: "speech-and-language-disorders",
+            children: [
+              {
+                index: true,
+                element: <LanguageAndSpeechDisordersPage />,
               },
             ],
           },
