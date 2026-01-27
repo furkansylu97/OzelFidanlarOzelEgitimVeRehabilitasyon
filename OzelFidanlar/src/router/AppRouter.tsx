@@ -20,6 +20,7 @@ import AttentionDeficitHyperactivityDisorderPage from "../features/home/pages/at
 import IntellectualDisabilityPage from "../features/home/pages/intellectual-disability-page/IntellectualDisabilityPage";
 import DownSyndromePage from "../features/home/pages/down-syndrome-page/DownSyndromePage";
 import OccupationalTherapyPage from "../features/home/pages/occupational-therapy-page/OccupationalTherapyPage";
+import ServicesPage from "../features/home/pages/servicespage/ServicesPage";
 
 export const router = createBrowserRouter([
   {
@@ -128,6 +129,15 @@ export const router = createBrowserRouter([
           {
             path: "occupational-therapy",
             element: <OccupationalTherapyPage />,
+          },
+        ],
+      },
+      {
+        path: "services",
+        children: [
+          {
+            index: true,
+            element: <ServicesPage />,
           },
         ],
       },
