@@ -21,6 +21,7 @@ import IntellectualDisabilityPage from "../features/home/pages/intellectual-disa
 import DownSyndromePage from "../features/home/pages/down-syndrome-page/DownSyndromePage";
 import OccupationalTherapyPage from "../features/home/pages/occupational-therapy-page/OccupationalTherapyPage";
 import ServicesPage from "../features/home/pages/servicespage/ServicesPage";
+import FamilyEducationCounselingPage from "../features/home/pages/family-educaiton-counseling-page/FamilyEducationCounselingPage";
 
 export const router = createBrowserRouter([
   {
@@ -138,6 +139,10 @@ export const router = createBrowserRouter([
           {
             index: true,
             element: <ServicesPage />,
+          },
+          {
+            path: "family-education-counseling",
+            element: <FamilyEducationCounselingPage />,
           },
         ],
       },
