@@ -22,6 +22,7 @@ import DownSyndromePage from "../features/home/pages/down-syndrome-page/DownSynd
 import OccupationalTherapyPage from "../features/home/pages/occupational-therapy-page/OccupationalTherapyPage";
 import ServicesPage from "../features/home/pages/servicespage/ServicesPage";
 import FamilyEducationCounselingPage from "../features/home/pages/family-educaiton-counseling-page/FamilyEducationCounselingPage";
+import AdolescenceCounselingPage from "../features/home/pages/adolescent-counseling-page/AdolescenceCounselingPage";
 
 export const router = createBrowserRouter([
   {
@@ -143,6 +144,10 @@ export const router = createBrowserRouter([
           {
             path: "family-education-counseling",
             element: <FamilyEducationCounselingPage />,
+          },
+          {
+            path: "adolescent-counseling",
+            element: <AdolescenceCounselingPage />,
           },
         ],
       },
