@@ -23,6 +23,7 @@ import OccupationalTherapyPage from "../features/home/pages/occupational-therapy
 import ServicesPage from "../features/home/pages/servicespage/ServicesPage";
 import FamilyEducationCounselingPage from "../features/home/pages/family-educaiton-counseling-page/FamilyEducationCounselingPage";
 import AdolescenceCounselingPage from "../features/home/pages/adolescent-counseling-page/AdolescenceCounselingPage";
+import AcademicSkillsEducationPage from "../features/home/pages/academic-skills-education-page/AcademicSkillsEducationPage";
 
 export const router = createBrowserRouter([
   {
@@ -148,6 +149,10 @@ export const router = createBrowserRouter([
           {
             path: "adolescent-counseling",
             element: <AdolescenceCounselingPage />,
+          },
+          {
+            path: "academic-skills-education",
+            element: <AcademicSkillsEducationPage />,
           },
         ],
       },
