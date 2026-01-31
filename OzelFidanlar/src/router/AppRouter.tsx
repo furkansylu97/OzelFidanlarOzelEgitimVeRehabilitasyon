@@ -25,6 +25,7 @@ import FamilyEducationCounselingPage from "../features/home/pages/family-educait
 import AdolescenceCounselingPage from "../features/home/pages/adolescent-counseling-page/AdolescenceCounselingPage";
 import AcademicSkillsEducationPage from "../features/home/pages/academic-skills-education-page/AcademicSkillsEducationPage";
 import GuidancePsychologicalCounselingPage from "../features/home/pages/guidance-psychological-counseling-page/GuidancePsychologicalCounselingPage";
+import GalleryPage from "../features/home/pages/gallerypage/GalleryPage";
 
 export const router = createBrowserRouter([
   {
@@ -158,6 +159,15 @@ export const router = createBrowserRouter([
           {
             path: "guidance-psychological-counseling",
             element: <GuidancePsychologicalCounselingPage />,
+          },
+        ],
+      },
+      {
+        path: "gallery",
+        children: [
+          {
+            index: true,
+            element: <GalleryPage />,
           },
         ],
       },
