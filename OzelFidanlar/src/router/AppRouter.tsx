@@ -29,6 +29,7 @@ import GalleryPage from "../features/home/pages/gallerypage/GalleryPage";
 import EventsPage from "../features/home/pages/eventspage/EventsPage";
 import MediaPage from "../features/home/pages/mediapage/MediaPage";
 import BlogPage from "../features/home/pages/blogpage/BlogPage";
+import BlogDetailPage from "../features/home/pages/blog-detail-page/BlogDetailPage";
 
 export const router = createBrowserRouter([
   {
@@ -188,6 +189,10 @@ export const router = createBrowserRouter([
           {
             index: true,
             element: <BlogPage />,
+          },
+          {
+            path: ":slug",
+            element: <BlogDetailPage />,
           },
         ],
       },

@@ -57,7 +57,7 @@ const BlogContentSection = () => {
         />
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex items-center justify-center">
         <Container>
           <div className="flex flex-col items-center">
             <h1 className="inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-3xl font-bold tracking-tight text-gray-900">
