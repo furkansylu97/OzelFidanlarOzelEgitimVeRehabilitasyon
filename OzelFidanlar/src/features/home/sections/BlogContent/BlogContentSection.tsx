@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
+import heroDefault from "../../../../assets/images/home/hero/slide-9.jpg";
 import { getBlogs } from "../../service/blog/blogService";
 import type { Blog } from "../../data/Blog/blog";
 import BlogCard from "../../components/Blog/BlogCard";
 import { Container } from "../../../../shared/components/container/Container";
 
-const shuffleArray = <T,>(array: T[]): T[] => {
-  return [...array].sort(() => Math.random() - 0.5);
-};
-
-const BlogSection = () => {
+const BlogContentSection = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -18,10 +15,13 @@ const BlogSection = () => {
       try {
         const data = await getBlogs();
 
-        const randomThree = shuffleArray(data).slice(0, 3);
-        setBlogs(randomThree);
+        const sortedBlogs = [...data].sort(
+          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+        );
+
+        setBlogs(sortedBlogs);
       } catch (err) {
-        console.error("Anasayfa blogları alınamadı:", err);
+        console.error("Bloglar alınamadı:", err);
         setError("Blog yazıları yüklenirken bir hata oluştu.");
       } finally {
         setLoading(false);
@@ -34,7 +34,7 @@ const BlogSection = () => {
   if (error) {
     return (
       <section className="py-24 text-center">
-        <p className="text-red-500 font-medium">{error}</p>
+        <p className="font-medium text-red-500">{error}</p>
       </section>
     );
   }
@@ -48,18 +48,25 @@ const BlogSection = () => {
   }
 
   return (
-    <section>
-      <div className="flex items-center justify-center">
+    <section className="w-full">
+      <div className="mb-10">
+        <img
+          src={heroDefault}
+          alt="Blog hero"
+          className="h-72 w-full object-cover"
+        />
+      </div>
+
+      <div className="flex justify-center">
         <Container>
           <div className="flex flex-col items-center">
-            <h2 className="pl-1 inline-block border-l-4 border-amber-300 bg-[#001064]/10  text-3xl font-bold text-gray-900">
+            <h1 className="inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-3xl font-bold tracking-tight text-gray-900">
               Blog
-            </h2>
-            <div className="text-center">
-              <h3 className="my-5 text-xl font-bold">Son Gelişmeler</h3>
-            </div>
+            </h1>
 
-            <div className="border-t border-gray-300">
+            <h3 className="my-5 text-center text-xl font-bold">Tüm Yazılar</h3>
+
+            <div className="w-full border-t border-gray-300">
               {blogs.length === 0 && (
                 <p className="py-10 text-center text-gray-500">
                   Henüz yayınlanmış blog bulunmuyor.
@@ -77,4 +84,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
+export default BlogContentSection;

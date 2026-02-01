@@ -28,6 +28,7 @@ import GuidancePsychologicalCounselingPage from "../features/home/pages/guidance
 import GalleryPage from "../features/home/pages/gallerypage/GalleryPage";
 import EventsPage from "../features/home/pages/eventspage/EventsPage";
 import MediaPage from "../features/home/pages/mediapage/MediaPage";
+import BlogPage from "../features/home/pages/blogpage/BlogPage";
 
 export const router = createBrowserRouter([
   {
@@ -178,6 +179,15 @@ export const router = createBrowserRouter([
           {
             path: "media",
             element: <MediaPage />,
+          },
+        ],
+      },
+      {
+        path: "blog",
+        children: [
+          {
+            index: true,
+            element: <BlogPage />,
           },
         ],
       },
