@@ -27,6 +27,7 @@ import AcademicSkillsEducationPage from "../features/home/pages/academic-skills-
 import GuidancePsychologicalCounselingPage from "../features/home/pages/guidance-psychological-counseling-page/GuidancePsychologicalCounselingPage";
 import GalleryPage from "../features/home/pages/gallerypage/GalleryPage";
 import EventsPage from "../features/home/pages/eventspage/EventsPage";
+import MediaPage from "../features/home/pages/mediapage/MediaPage";
 
 export const router = createBrowserRouter([
   {
@@ -173,6 +174,10 @@ export const router = createBrowserRouter([
           {
             path: "events",
             element: <EventsPage />,
+          },
+          {
+            path: "media",
+            element: <MediaPage />,
           },
         ],
       },

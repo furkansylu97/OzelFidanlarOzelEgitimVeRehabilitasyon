@@ -10,7 +10,7 @@ const AboutContentSection: React.FC = () => {
         <img
           src={aboutImage}
           alt="Özel Fidanlar Özel Eğitim ve Rehabilitasyon Merkezi"
-          className="h-[calc(var(--viewport-height)*0.6)] w-full object-cover"
+          className="h-132 w-full object-cover"
         />
         <div className="absolute inset-0 bg-black/20" />
       </div>
