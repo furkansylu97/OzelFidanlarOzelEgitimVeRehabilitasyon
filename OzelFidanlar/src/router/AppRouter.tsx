@@ -31,6 +31,7 @@ import MediaPage from "../features/home/pages/mediapage/MediaPage";
 import BlogPage from "../features/home/pages/blogpage/BlogPage";
 import BlogDetailPage from "../features/home/pages/blog-detail-page/BlogDetailPage";
 import ContactContentPage from "../features/home/pages/contactcontentpage/ContactContentPage";
+import NotFoundPage from "../features/home/pages/notfoundpage/NotFoundPage";
 
 export const router = createBrowserRouter([
   {
@@ -205,6 +206,10 @@ export const router = createBrowserRouter([
             element: <ContactContentPage />,
           },
         ],
+      },
+      {
+        path: "*",
+        element: <NotFoundPage />,
       },
     ],
   },
