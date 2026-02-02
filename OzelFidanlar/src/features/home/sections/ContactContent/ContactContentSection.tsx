@@ -29,7 +29,7 @@ const serviceOptions = [
   "Ergoterapi",
 ];
 
-const ContactSection = () => {
+const ContactContentSection = () => {
   const [form, setForm] = useState<FormState>({
     name: "",
     email: "",
@@ -127,7 +127,7 @@ const ContactSection = () => {
             </div>
 
             <p className="text-white/80 text-base my-6">
-              Bizimle İletişime Geçmenizden Mutluluk Duyarız
+              İletişim kanallarımız veya form aracılığıyla bize ulaşabilirsiniz
             </p>
 
             <div className="space-y-7">
@@ -210,4 +210,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default ContactContentSection;

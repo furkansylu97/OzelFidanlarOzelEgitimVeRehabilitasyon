@@ -30,6 +30,7 @@ import EventsPage from "../features/home/pages/eventspage/EventsPage";
 import MediaPage from "../features/home/pages/mediapage/MediaPage";
 import BlogPage from "../features/home/pages/blogpage/BlogPage";
 import BlogDetailPage from "../features/home/pages/blog-detail-page/BlogDetailPage";
+import ContactContentPage from "../features/home/pages/contactcontentpage/ContactContentPage";
 
 export const router = createBrowserRouter([
   {
@@ -193,6 +194,15 @@ export const router = createBrowserRouter([
           {
             path: ":slug",
             element: <BlogDetailPage />,
+          },
+        ],
+      },
+      {
+        path: "contact",
+        children: [
+          {
+            index: true,
+            element: <ContactContentPage />,
           },
         ],
       },
