@@ -6,7 +6,7 @@ import { socialLinks } from "./SocialLinks";
 
 const Navbar = () => {
   return (
-    <nav className="absolute top-40 left-0 w-full z-20">
+    <nav className="hidden lg:block absolute top-40 left-0 w-full z-20">
       <div className="flex h-16 w-full items-center justify-center bg-[#001064]/50">
         <Container>
           <div className="flex w-full items-center justify-between text-white font-semibold">
@@ -23,7 +23,11 @@ const Navbar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={icon} alt={alt} className="w-6 h-6 object-contain" />
+                  <img
+                    src={icon}
+                    alt={alt}
+                    className="w-6 h-6 object-contain"
+                  />
                 </a>
               ))}
             </div>

@@ -12,3 +12,9 @@
     focus:ring-amber-300/40
     transition;
 }
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}

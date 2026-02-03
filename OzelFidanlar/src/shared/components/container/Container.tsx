@@ -7,7 +7,11 @@ interface Container {
 
 export const Container = ({ children, className = "" }: Container) => {
   return (
-    <div className={`container flex w-full px-20 ${className}`}>{children}</div>
+    <div
+      className={`container flex w-full px-5 lg:px-20 ${className}`}
+    >
+      {children}
+    </div>
   );
 };
 
