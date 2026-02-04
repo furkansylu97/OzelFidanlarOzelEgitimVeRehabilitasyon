@@ -9,10 +9,10 @@ const AboutItem: FC<AboutItemProps> = ({ item }) => {
   const Icon = item.icon;
 
   return (
-    <div className="flex items-start gap-5">
+    <div className="flex items-start gap-3 lg:gap-5">
       <div className="flex justify-center">
         <div
-          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full 
+          className="flex h-12 lg:h-14 w-12 lg:w-14 shrink-0 items-center justify-center rounded-full 
           border-2 border-[#001064] bg-[#001064]/10 text-[#001064]"
         >
           <Icon size={24} />
@@ -20,7 +20,7 @@ const AboutItem: FC<AboutItemProps> = ({ item }) => {
       </div>
 
       <div>
-        <h4 className="text-lg font-semibold text-gray-900">{item.title}</h4>
+        <h4 className="text-base lg:text-lg font-semibold text-gray-900">{item.title}</h4>
         <p className="text-base text-gray-600">{item.description}</p>
       </div>
     </div>
