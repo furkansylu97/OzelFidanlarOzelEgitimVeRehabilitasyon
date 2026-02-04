@@ -18,9 +18,10 @@ const AppSelect = ({
     <Select.Root value={value} onValueChange={onChange}>
       <Select.Trigger
         className="
-          input w-1/2
+          input w-full
           flex items-center justify-between
           cursor-pointer
+          text-sm lg:text-base
         "
       >
         <Select.Value placeholder={placeholder} />
@@ -35,17 +36,20 @@ const AppSelect = ({
           position="popper"
           side="bottom"
           sideOffset={6}
-          align="start"
-          className=" z-30 rounded-lg bg-[#001064] shadow-xl overflow-hidden"
+          align="center"
+          avoidCollisions={false}
+          className=" z-30 rounded-lg bg-[#001064] shadow-xl overflow-hidden max-h-[60vh]"
         >
-          <Select.Viewport>
+          <Select.Viewport className="overflow-y-auto">
             {options.map((option) => (
               <Select.Item
                 key={option}
                 value={option}
                 className="
                   flex items-center justify-between
-                  px-4 py-2
+                  min-h-[40px]
+                  px-3 lg:px-4 py-1 lg:py-2
+                  text-sm lg:text-base
                   text-white
                   cursor-pointer
                   outline-none
