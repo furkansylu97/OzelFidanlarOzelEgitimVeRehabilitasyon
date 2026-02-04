@@ -102,7 +102,7 @@ const HeroCarousel: FC<HeroCarouselProps> = ({ slides }) => {
                   {slide.button && (
                     <Link
                       to={slide.button.link}
-                      className="relative inline-block overflow-hidden px-6 lg:px-8 py-3 lg:py-4 border border-[#ffda68] bg-[linear-gradient(94.06deg,#ffb629_-1.21%,#ffda56_58.66%,#ffd7a6_116.84%)] text-black font-semibold shadow-[rgba(33,35,38,0.1)_0_10px_10px_-10px] group"
+                      className="relative inline-block overflow-hidden px-8 py-4 border border-[#ffda68] bg-[linear-gradient(94.06deg,#ffb629_-1.21%,#ffda56_58.66%,#ffd7a6_116.84%)] text-black font-semibold shadow-[rgba(33,35,38,0.1)_0_10px_10px_-10px] group"
                     >
                       <span
                         className="hidden lg:block absolute left-36 top-6 h-16 w-56 rounded-full bg-white transition-all

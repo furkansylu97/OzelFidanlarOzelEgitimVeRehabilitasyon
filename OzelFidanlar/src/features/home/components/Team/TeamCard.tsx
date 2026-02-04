@@ -2,16 +2,19 @@ import type { TeamMember } from "../../data/Team/teamData";
 
 interface TeamCardProps {
   member: TeamMember;
+  priority?: boolean;
 }
 
-const TeamCard = ({ member }: TeamCardProps) => {
+const TeamCard = ({ member, priority }: TeamCardProps) => {
   return (
-    <div className="group overflow-hidden rounded-2xl bg-white shadow-sm transition hover:shadow-lg shadow-gray-500">
-      <div className="h-96 overflow-hidden">
+    <div className="group overflow-hidden rounded-2xl bg-white shadow-sm lg:shadow-sm transition motion-safe:hover:shadow-lg shadow-gray-500">
+      <div className=" h-[40vh] lg:h-96 overflow-hidden">
         <img
           src={member.image}
           alt={member.name}
-          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+          loading={priority ? "eager" : "lazy"}
+          decoding="async"
+          className="h-full w-full object-cover transition-transform duration-300 motion-safe:group-hover:scale-110"
         />
       </div>
 
