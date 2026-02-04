@@ -21,11 +21,11 @@ const HeroCarousel: FC<HeroCarouselProps> = ({ slides }) => {
     },
     [
       Autoplay({
-        delay: 3000,
+        delay: 4000,
         stopOnInteraction: false,
         stopOnMouseEnter: true,
       }),
-    ]
+    ],
   );
 
   useEffect(() => {
@@ -51,7 +51,7 @@ const HeroCarousel: FC<HeroCarouselProps> = ({ slides }) => {
 
   return (
     <div
-      className="relative overflow-hidden h-full w-full object-contain"
+      className="relative overflow-hidden h-[calc(100vh-8rem)] lg:h-[calc(100vh-10rem)] w-full"
       ref={emblaRef}
     >
       <div className="flex">
@@ -60,22 +60,24 @@ const HeroCarousel: FC<HeroCarouselProps> = ({ slides }) => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="h-[calc(var(--viewport-height)-10rem)] w-full object-cover"
+              loading="lazy"
+              className="h-[calc(100vh-8rem)] lg:h-[calc(100vh-10rem)] w-full object-cover transition-all duration-500 ease-in-out filter blur-sm"
+              onLoad={(e) => e.currentTarget.classList.remove("blur-sm")}
             />
             <div
               className="absolute inset-0 flex justify-center"
               style={{ backgroundColor: slide.colors.overlay }}
             >
-              <Container className="relative mt-[calc(var(--viewport-height)*0.3)]">
+              <Container className="relative mt-[20vh] lg:mt-[30vh]">
                 <div
-                  className={`absolute px-3 max-w-2xl transition-all duration-1000 ease-out ${
+                  className={`absolute px-3 max-w-lg lg:max-w-2xl transition-all duration-1000 ease-out ${
                     index === selectedIndex && animate
                       ? "opacity-100 translate-x-0"
                       : "opacity-0 -translate-x-full"
                   }`}
                 >
                   <h2
-                    className="inline-block text-2xl font-bold px-1 mb-4 bg-[#001064]/25 border-l-4 border-solid border-amber-300"
+                    className="inline-block text-xl lg:text-2xl text-center lg:text-left font-bold px-1 mb-4 bg-[#001064]/25 border-l-4 border-solid border-amber-300"
                     style={{ color: slide.colors.title }}
                   >
                     {slide.title}
@@ -83,7 +85,7 @@ const HeroCarousel: FC<HeroCarouselProps> = ({ slides }) => {
 
                   {slide.subtitle && (
                     <h4
-                      className="text-lg font-medium italic mb-4"
+                      className="text-base lg:text-lg font-medium italic mb-4"
                       style={{ color: slide.colors.subtitle }}
                     >
                       {slide.subtitle}
@@ -91,7 +93,7 @@ const HeroCarousel: FC<HeroCarouselProps> = ({ slides }) => {
                   )}
 
                   <p
-                    className="text-base font-normal mb-6"
+                    className="text-sm lg:text-base font-normal mb-6"
                     style={{ color: slide.colors.description }}
                   >
                     {slide.description}
@@ -100,10 +102,10 @@ const HeroCarousel: FC<HeroCarouselProps> = ({ slides }) => {
                   {slide.button && (
                     <Link
                       to={slide.button.link}
-                      className="relative inline-block overflow-hidden px-8 py-4 border border-[#ffda68] bg-[linear-gradient(94.06deg,#ffb629_-1.21%,#ffda56_58.66%,#ffd7a6_116.84%)] text-black font-semibold shadow-[rgba(33,35,38,0.1)_0_10px_10px_-10px] group"
+                      className="relative inline-block overflow-hidden px-6 lg:px-8 py-3 lg:py-4 border border-[#ffda68] bg-[linear-gradient(94.06deg,#ffb629_-1.21%,#ffda56_58.66%,#ffd7a6_116.84%)] text-black font-semibold shadow-[rgba(33,35,38,0.1)_0_10px_10px_-10px] group"
                     >
                       <span
-                        className="absolute left-36 top-6 h-16 w-56 rounded-full bg-white transition-all
+                        className="hidden lg:block absolute left-36 top-6 h-16 w-56 rounded-full bg-white transition-all
                        group-hover:w-60 group-hover:h-44 group-hover:-left-8 group-hover:-top-5 duration-300 ease-in-out"
                       />
                       <span className="relative z-10">{slide.button.text}</span>
