@@ -10,11 +10,11 @@ const WhyUsSection = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col justify-center">
             <div className="flex items-center justify-center">
-              <h2 className="inline-block pl-1 font-bold text-2xl text-gray-900 bg-[#001064]/10 border-l-4 border-amber-300 border-solid">
+              <h2 className="inline-block pl-1 font-bold text-xl lg:text-2xl text-gray-900 bg-[#001064]/10 border-l-4 border-amber-300 border-solid">
                 Neden Fidanlar
               </h2>
             </div>
-            <div className="text-center my-10">
+            <div className="text-center my-8 lg:my-10">
               <p className="text-gray-600 font-medium">
                 Her bireyin potansiyelini ortaya çıkarmak için bilimsel
                 temellere dayalı ve bireye özel yaklaşımlar sunuyoruz. Güven,
@@ -23,7 +23,7 @@ const WhyUsSection = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
             {whyUsData.map((item, index) => (
               <WhyUsItem key={index} {...item} />
             ))}
