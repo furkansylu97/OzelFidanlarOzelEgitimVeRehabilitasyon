@@ -6,7 +6,7 @@ import AboutItem from "../../components/About/AboutItem";
 const AboutSection = () => {
   return (
     <section className="relative w-full">
-      <div className="relative h-[40vh] lg:h-[70vh] w-full overflow-hidden">
+      <div className="relative h-[40vh] lg:h-[60vh] w-full overflow-hidden">
         <img
           src={aboutImage}
           alt="Hakkımızda"
