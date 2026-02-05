@@ -6,10 +6,10 @@ import Whatsapp from "../../../assets/icons/whatsapp.svg";
 
 const FooterContact = () => {
   return (
-    <div className="px-10">
-      <h4 className="mb-5 text-lg font-semibold text-[#74ae38] tracking-wide">İletişim</h4>
+    <div className="px-2 lg:px-10 border-b border-[#74ae38] lg:border-none">
+      <h4 className="mb-4 lg:mb-5 text-lg font-semibold text-[#74ae38] tracking-wide">İletişim</h4>
 
-      <ul className="space-y-4 text-sm">
+      <ul className="space-y-4 text-sm mb-4 lg:mb-0">
         <li className="flex items-start gap-3">
           <div className="w-9 h-9 rounded-full border border-[#74ae38] flex items-center justify-center">
             <img src={Mail} alt="Email" className="w-5 h-5" />

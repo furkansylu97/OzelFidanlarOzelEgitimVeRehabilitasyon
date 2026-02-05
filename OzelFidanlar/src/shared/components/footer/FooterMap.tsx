@@ -2,7 +2,7 @@ import FooterMapImage from "../../../assets/images/home/footer/footer-map.jpeg";
 
 const FooterMap = () => {
   return (
-    <div className="w-56 mt-6">
+    <div className="hidden lg:block w-56 mt-6">
       <a
         href="https://www.google.com/maps?q=Özel+Fidanlar+Özel+Eğitim+Ve+Rehabilitasyon+Merkezi"
         target="_blank"

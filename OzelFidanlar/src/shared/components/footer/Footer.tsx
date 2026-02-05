@@ -14,27 +14,27 @@ export const Footer = () => {
         <img
           src={FooterImage}
           alt="Footer Background"
-          className="w-full h-48 object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          className="w-full h-20 lg:h-48 object-cover transition-transform duration-700 ease-out motion-safe:group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-[#001064]/25" />
       </div>
 
-      <div className="flex justify-center items-center py-16">
+      <div className="flex justify-center items-center py-10 lg:py-16">
         <Container>
-          <div className="grid grid-cols-12 gap-10 w-full">
-            <div className="col-span-4">
+          <div className="grid grid-cols-12 gap-6 lg:gap-10 w-full">
+            <div className="col-span-12 lg:col-span-4">
               <FooterBrand />
             </div>
 
-            <div className="col-span-3">
+            <div className="col-span-12 lg:col-span-3">
               <FooterContact />
             </div>
 
-            <div className="col-span-2">
+            <div className="col-span-12 lg:col-span-2">
               <FooterNav />
             </div>
 
-            <div className="col-span-3">
+            <div className="col-span-12 lg:col-span-3">
               <FooterSocial />
             </div>
           </div>
