@@ -8,7 +8,7 @@ interface TeamCardProps {
 const TeamCard = ({ member, priority }: TeamCardProps) => {
   return (
     <div className="group overflow-hidden rounded-2xl bg-white shadow-sm lg:shadow-sm transition motion-safe:hover:shadow-lg shadow-gray-500">
-      <div className="h-[40vh] md:[50vh] lg:h-96 overflow-hidden">
+      <div className="h-[40vh] lg:h-96 overflow-hidden">
         <img
           src={member.image}
           alt={member.name}
