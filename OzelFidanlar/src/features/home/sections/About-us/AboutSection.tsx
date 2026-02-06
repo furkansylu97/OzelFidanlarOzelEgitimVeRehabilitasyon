@@ -16,7 +16,7 @@ const AboutSection = () => {
       </div>
 
       <div className="relative mt-2 lg:-mt-32 flex justify-center">
-        <div className="w-full max-w-sm md:max-w-lg lg:max-w-3xl rounded-sm bg-white p-8 lg:p-10 shadow-gray-500 shadow-xl">
+        <div className="w-full max-w-sm md:max-w-xl lg:max-w-3xl rounded-sm bg-white p-8 lg:p-10 shadow-gray-500 shadow-xl">
           <h2 className="mb-8 lg:mb-10 pl-1 inline-block border-l-4 border-amber-300 bg-[#001064]/10 text-2xl lg:text-3xl font-bold text-gray-900">
             Hakkımızda
           </h2>

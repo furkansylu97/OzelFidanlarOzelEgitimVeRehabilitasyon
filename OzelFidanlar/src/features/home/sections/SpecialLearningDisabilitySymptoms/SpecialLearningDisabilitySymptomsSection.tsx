@@ -18,7 +18,7 @@ const SpecialLearningDisabilitySymptomsSection: React.FC = () => {
       </div>
 
       <div className="relative mt-2 lg:-mt-32 flex justify-center">
-        <div className="w-full max-w-sm md:max-w-md lg:max-w-3xl rounded-sm bg-white p-10 shadow-xl shadow-gray-500">
+        <div className="w-full max-w-sm md:max-w-xl lg:max-w-3xl rounded-sm bg-white p-10 shadow-xl shadow-gray-500">
           <h2 className="mb-8 lg:mb-10 inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-xl lg:text-2xl font-bold text-gray-900">
             {hero.title}
           </h2>
@@ -45,7 +45,7 @@ const SpecialLearningDisabilitySymptomsSection: React.FC = () => {
                     className="group flex max-w-sm md:max-w-md lg:max-w-xl gap-4 rounded-md border border-gray-300 p-5 shadow-lg shadow-gray-500 transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-xl"
                   >
                     <div className="mt-1 text-amber-300 transition-colors duration-300 motion-safe:group-hover:text-[#001064]">
-                      <Icon className="w-8 lg:w-10 h-8 lg:h-10 transition-transform group-hover:scale-110" />
+                      <Icon className="w-8 lg:w-10 h-8 lg:h-10 transition-transform motion-safe:group-hover:scale-110" />
                     </div>
                     <div className="px-2">
                       <h2 className="text-base lg:text-xl font-semibold text-gray-800">
