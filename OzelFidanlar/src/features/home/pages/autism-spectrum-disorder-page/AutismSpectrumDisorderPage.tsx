@@ -5,7 +5,7 @@ const AutismSpectrumDisorderPage: React.FC = () => {
   return (
     <>
       <AutismSpectrumDisorderSection />
-      <section aria-hidden className="h-24" />
+      <section aria-hidden className="h-10 lg:h-24" />
     </>
   );
 };
