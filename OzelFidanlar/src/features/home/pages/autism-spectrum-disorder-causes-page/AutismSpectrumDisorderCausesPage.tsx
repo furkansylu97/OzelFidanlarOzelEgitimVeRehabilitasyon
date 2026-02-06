@@ -4,7 +4,7 @@ const AutismSpectrumDisorderCausesPage = () => {
   return (
     <>
       <AutismSpectrumDisorderCausesSection />
-      <section aria-hidden className="h-24" />
+      <section aria-hidden className="h-10 lg:h-24" />
     </>
   );
 };
