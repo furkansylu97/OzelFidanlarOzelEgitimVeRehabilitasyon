@@ -42,7 +42,7 @@ const AutismSpectrumDisorderWhatIsSection: React.FC = () => {
                 return (
                   <div
                     key={i}
-                    className="group flex  max-w-sm md:max-w-md lg:max-w-xl gap-4 rounded-md border border-gray-300 p-5 shadow-lg shadow-gray-500 transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-xl"
+                    className="group flex max-w-sm md:max-w-md lg:max-w-xl gap-4 rounded-md border border-gray-300 p-5 shadow-lg shadow-gray-500 transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-xl"
                   >
                     <div className="mt-1 text-amber-300 transition-colors duration-300 motion-safe:group-hover:text-[#001064]">
                       <Icon className="w-8 lg:w-10 h-8 lg:h-10 transition-transform motion-safe:group-hover:scale-110" />
@@ -59,7 +59,7 @@ const AutismSpectrumDisorderWhatIsSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="space-y-6 text-lg leading-relaxed text-gray-600">
+          <div className="space-y-6 text-base lg:text-lg leading-relaxed text-gray-600">
             {closing.map((text, i) => (
               <p
                 key={i}
