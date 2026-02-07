@@ -20,7 +20,7 @@ const GallerySection = () => {
         />
       </div>
       <div className="flex items-center justify-center">
-        <Container className=" border-b pb-12 md:pb-14 lg:pb-16 border-gray-300">
+        <Container className="border-b pb-12 md:pb-14 lg:pb-16 border-gray-300">
           <div className="flex flex-col items-center justify-center">
             <div className="max-w-4xl mb-12 md:mb-14 lg:mb-16">
               <div className="flex items-center justify-center">
