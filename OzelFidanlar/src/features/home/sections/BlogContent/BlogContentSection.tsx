@@ -33,7 +33,7 @@ const BlogContentSection = () => {
 
   if (error) {
     return (
-      <section className="py-24 text-center">
+      <section className="py-16 md:py-20 lg:py-24 text-center">
         <p className="font-medium text-red-500">{error}</p>
       </section>
     );
@@ -41,7 +41,7 @@ const BlogContentSection = () => {
 
   if (loading) {
     return (
-      <section className="py-24 text-center">
+      <section className="pb-16 md:pb-20 lg:pb-24 text-center">
         <p className="text-gray-500">Yazılar yükleniyor...</p>
       </section>
     );
@@ -49,26 +49,26 @@ const BlogContentSection = () => {
 
   return (
     <section className="w-full">
-      <div className="mb-10">
+      <div className="mb-6 lg:mb-10">
         <img
           src={heroDefault}
           alt="Blog hero"
-          className="h-72 w-full object-cover"
+          className="h-[30vh] md:h-64 lg:h-72 w-full object-cover"
         />
       </div>
 
       <div className="flex items-center justify-center">
         <Container>
           <div className="flex flex-col items-center">
-            <h1 className="inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-3xl font-bold tracking-tight text-gray-900">
+            <h1 className="inline-block border-l-4 border-amber-300 bg-[#001064]/10 pl-1 text-2xl lg:text-3xl font-bold tracking-tight text-gray-900">
               Blog
             </h1>
 
-            <h3 className="my-5 text-center text-xl font-bold">Tüm Yazılar</h3>
+            <h3 className="my-3 md:my-4 lg:my-5 text-center text-lg lg:text-xl font-bold">Tüm Yazılar</h3>
 
             <div className="w-full border-t border-gray-300">
               {blogs.length === 0 && (
-                <p className="py-10 text-center text-gray-500">
+                <p className="py-6 md:py-8 lg:py-10 text-center text-gray-500">
                   Henüz yayınlanmış blog bulunmuyor.
                 </p>
               )}
