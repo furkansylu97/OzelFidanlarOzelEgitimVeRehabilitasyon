@@ -4,7 +4,7 @@ const GuidancePsychologicalCounselingPage = () => {
   return (
     <>
       <GuidancePsychologicalCounselingSection />
-      <section aria-hidden className="h-24" />
+      <section aria-hidden className="h-0 lg:h-24" />
     </>
   );
 };
