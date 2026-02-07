@@ -138,7 +138,7 @@ const ContactSection = () => {
           </div>
 
           <div className="flex-col lg:flex lg:max-w-3xl w-full mx-auto">
-            <h2 className="lg:hidden inline-block text-white pl-1 text-2xl font-semibold lg:font-bold border-l-4 border-amber-300 bg-white/10">
+            <h2 className="lg:hidden inline-block text-white pl-1 text-2xl font-semibold border-l-4 border-amber-300 bg-white/10">
               İletişim
             </h2>
             <p className="lg:hidden text-white/80 text-sm my-6">
@@ -204,7 +204,7 @@ const ContactSection = () => {
                   py-4
                   rounded-lg
                   font-semibold
-                  hover:font-normal
+                  motion-safe:hover:font-normal
                   transition
                 "
               >

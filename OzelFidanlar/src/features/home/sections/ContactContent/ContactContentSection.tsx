@@ -116,10 +116,10 @@ const ContactContentSection = () => {
   };
 
   return (
-    <section className="flex items-center justify-center bg-[#001064] py-10 h-[calc(var(--viewport-height)*0.8)]">
+    <section className="flex items-center justify-center bg-[#001064] py-4 lg:py-10 h-dvh lg:h-[80vh]">
       <Container>
-        <div className="flex items-stretch justify-between w-full gap-12">
-          <div className="max-w-lg text-white flex flex-col justify-between h-full">
+        <div className="flex items-stretch justify-between w-full lg:gap-12">
+          <div className="hidden lg:flex flex-col justify-between lg:max-w-lg text-white h-full">
             <div>
               <h2 className="inline-block pl-1 text-3xl font-bold border-l-4 border-amber-300 bg-white/10">
                 İletişim
@@ -137,15 +137,23 @@ const ContactContentSection = () => {
             </div>
           </div>
 
-          <div className="flex max-w-3xl w-full h-full">
-            <div className="flex flex-wrap gap-10 h-full justify-between w-full">
-              <div className="flex w-full gap-5">
+          <div className="flex-col lg:flex lg:max-w-3xl w-full mx-auto">
+
+            <h2 className="lg:hidden inline-block text-white pl-1 text-2xl font-semibold border-l-4 border-amber-300 bg-white/10">
+              İletişim
+            </h2>
+            <p className="lg:hidden text-white/80 text-sm my-6">
+              Bizimle İletişime Geçmenizden Mutluluk Duyarız
+            </p>
+
+            <div className="flex flex-wrap gap-5 lg:gap-10 justify-between w-full">
+              <div className="flex flex-col lg:flex-row w-full gap-5">
                 <input
                   name="name"
                   placeholder="Adınız & Soyadınız *"
                   value={form.name}
                   onChange={handleChange}
-                  className="input w-1/2"
+                  className="input w-full lg:w-1/2"
                 />
 
                 <input
@@ -154,17 +162,17 @@ const ContactContentSection = () => {
                   placeholder="Mail Adresiniz *"
                   value={form.email}
                   onChange={handleChange}
-                  className="input w-1/2"
+                  className="input w-full lg:w-1/2"
                 />
               </div>
 
-              <div className="flex w-full gap-5">
+              <div className="flex flex-col lg:flex-row w-full gap-5">
                 <input
                   name="phone"
                   placeholder="Telefon Numaranız *"
                   value={form.phone}
                   onChange={handleChange}
-                  className="input w-1/2"
+                  className="input w-full lg:w-1/2"
                 />
 
                 <AppSelect
@@ -196,7 +204,7 @@ const ContactContentSection = () => {
                   py-4
                   rounded-lg
                   font-semibold
-                  hover:font-normal
+                  motion-safe:hover:font-normal
                   transition
                 "
               >

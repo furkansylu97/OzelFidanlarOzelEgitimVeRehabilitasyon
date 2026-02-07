@@ -12,7 +12,7 @@ const ContactTrustItem: React.FC<Props> = ({ item }) => {
   const Icon = item.icon;
 
   return (
-    <div className="flex gap-4">
+    <div className="flex justify-center items-center gap-4">
       <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-amber-300/40 text-amber-400">
         <Icon size={22} />
       </div>
