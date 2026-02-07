@@ -10,32 +10,32 @@ const MediaSection: React.FC = () => {
         <img
           src={mediaImage}
           alt="Özel Eğitimde Ailenin Katkısı"
-          className="h-132 w-full object-cover"
+          className="h-[40vh] lg:h-[60vh] w-full object-cover"
         />
         <div className="absolute inset-0 bg-black/30" />
       </div>
 
-      <div className="relative -mt-40 flex justify-center">
+      <div className="relative mt-4 lg:-mt-32 flex justify-center">
         <Container>
-          <div className="mx-auto max-w-4xl rounded-2xl bg-white p-12 shadow-2xl">
+          <div className="mx-auto max-w-sm md:max-w-xl lg:max-w-4xl rounded-2xl bg-white p-2 lg:p-12 shadow-2xl">
             <span className="inline-flex items-center gap-2 mb-4 rounded-full bg-[#001064]/10 px-4 py-1 text-sm font-semibold text-[#001064]">
               <FaTv size={14} />
               Medyada Biz
             </span>
 
-            <div className="mb-6">
-              <h1 className="inline-block text-3xl font-bold tracking-tight pl-1 text-gray-900 border-l-4 border-amber-300 bg-[#001064]/10">
+            <div className="mb-4 lg:mb-6">
+              <h2 className="inline-block text-xl lg:text-3xl font-bold tracking-tight pl-1 text-gray-900 border-l-4 border-amber-300 bg-[#001064]/10">
                 Özel Eğitimde Ailenin Katkısı
-              </h1>
+              </h2>
             </div>
 
-            <div className="mb-8 flex flex-wrap gap-6 text-sm text-gray-500">
+            <div className="mb-6 lg:mb-8 lg:flex flex-wrap gap-6 text-sm text-gray-500">
               <span className="flex items-center gap-2">
                 <FaTv className="text-[#001064]" />
                 TV Programı
               </span>
 
-              <span className="flex items-center gap-2">
+              <span className="flex items-center my-2 lg:my-0 gap-2">
                 <FaCalendarAlt className="text-[#001064]" />
                 2022
               </span>
@@ -46,7 +46,7 @@ const MediaSection: React.FC = () => {
               </span>
             </div>
 
-            <div className="space-y-6 text-lg leading-relaxed text-gray-600 mb-12">
+            <div className="space-y-4 md:space-y-5 lg:space-y-6 text-base lg:text-lg leading-relaxed text-gray-600 mb-8 md:mb-10 lg:mb-12">
               <p>
                 Kurucu müdürümüzün konuk olduğu bu programda, özel eğitim
                 sürecinde ailenin rolü ve sorumlulukları kapsamlı bir şekilde
