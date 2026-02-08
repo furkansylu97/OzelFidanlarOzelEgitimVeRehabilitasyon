@@ -12,12 +12,15 @@ const TrainingCard = ({ data }: TrainingCardProps) => {
         <img
           src={data.image}
           alt={data.label}
+          loading="lazy"
           className="h-full w-full object-cover"
         />
       </div>
 
       <div className="flex flex-1 flex-col gap-4 p-5 lg:p-6">
-        <h3 className="text-base lg:text-lg font-semibold text-gray-900 leading-relaxed">{data.label}</h3>
+        <h3 className="text-base lg:text-lg font-semibold text-gray-900 leading-relaxed">
+          {data.label}
+        </h3>
 
         <p className="text-sm lg:text-base leading-relaxed text-gray-600 line-clamp-3">
           {data.description}

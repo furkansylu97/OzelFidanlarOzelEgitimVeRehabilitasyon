@@ -15,6 +15,7 @@ const EventsCard = ({ activity, hoverContent = "short" }: GalleryCardProps) => {
         <img
           src={activity.image}
           alt={activity.title}
+          loading="lazy"
           className="h-full w-full object-cover transition-transform duration-500 motion-safe:group-hover:scale-110"
         />
       </div>

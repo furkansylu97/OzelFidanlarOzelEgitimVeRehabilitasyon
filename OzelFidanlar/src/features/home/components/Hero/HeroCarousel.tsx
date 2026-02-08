@@ -60,7 +60,7 @@ const HeroCarousel: FC<HeroCarouselProps> = ({ slides }) => {
             <img
               src={slide.image}
               alt={slide.title}
-              loading="lazy"
+              loading={index === 0 ? "eager" : "lazy"}
               className="h-[calc(100vh-8rem)] lg:h-[calc(100vh-10rem)] w-full object-cover transition-all duration-500 ease-in-out filter blur-sm"
               onLoad={(e) => e.currentTarget.classList.remove("blur-sm")}
             />

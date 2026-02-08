@@ -24,7 +24,7 @@ export const servicesData: ServiceCategory[] = [
   },
   {
     label: "Ergenlik Dönemi Danışmanlığı",
-    slug: "aadolescent-counseling",
+    slug: "adolescent-counseling",
     description:
       "Ergenlik döneminde yaşanan duygusal, sosyal ve akademik zorluklara yönelik destekleyici danışmanlık programları.",
     icon: FaUserGraduate,

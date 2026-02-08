@@ -82,7 +82,7 @@ export const router = createBrowserRouter([
                 element: <SpecialLearningDisabilitySymptomsPage />,
               },
               {
-                path: "dyslexia-types",
+                path: "dyslexia",
                 element: <DyslexiaAndTypesPage />,
               },
             ],
