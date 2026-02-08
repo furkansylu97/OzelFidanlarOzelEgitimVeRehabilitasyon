@@ -1,4 +1,3 @@
-import React from "react";
 import lsdImage from "../../../../assets/images/home/hero/slide-3.jpg";
 import { languageAndSpeechDisorderWhatIs } from "../../data/LanguageAndSpeechDisorderWhatIs/languageAndSpeechDisorderWhatIs";
 

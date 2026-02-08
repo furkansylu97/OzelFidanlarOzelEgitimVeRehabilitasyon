@@ -1,4 +1,3 @@
-import React from "react";
 import sldImage from "../../../../assets/images/home/hero/slide-2.jpg";
 import { specialLearningDisabilitySymptoms } from "../../data/SpecialLearningDisabilitySymptoms/specialLearningDisabilitySymptoms";
 

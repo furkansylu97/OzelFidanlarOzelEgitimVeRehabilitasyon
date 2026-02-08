@@ -1,4 +1,4 @@
-import React, { memo, useState, useEffect } from "react";
+import { memo, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import type { NavItemType } from "./navData";
 import { SlArrowDown } from "react-icons/sl";

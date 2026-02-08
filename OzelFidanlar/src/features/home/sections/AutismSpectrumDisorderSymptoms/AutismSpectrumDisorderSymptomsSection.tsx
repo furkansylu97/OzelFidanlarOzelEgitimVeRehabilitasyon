@@ -1,4 +1,3 @@
-import React from "react";
 import asdImage from "../../../../assets/images/home/hero/slide-4.jpg";
 import { autismSpectrumDisorderSymptoms } from "../../data/AutismSpectrumDisorderSymptoms/autismSpectrumDisorderSymptoms";
 

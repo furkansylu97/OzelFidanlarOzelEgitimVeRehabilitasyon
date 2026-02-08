@@ -1,4 +1,3 @@
-import React from "react";
 import intellectualDisabilityImage from "../../../../assets/images/home/hero/slide-6.jpg";
 import { intellectualDisability } from "../../data/IntellectualDisability/intellectualDisability";
 

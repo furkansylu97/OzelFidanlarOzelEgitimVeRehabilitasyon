@@ -1,4 +1,3 @@
-import React from "react";
 import SpecialLearningDisabilitySection from "../../sections/SpecialLearningDisability/SpecialLearningDisabilitySection";
 
 const SpecialLearningDisabilityPage: React.FC = () => {

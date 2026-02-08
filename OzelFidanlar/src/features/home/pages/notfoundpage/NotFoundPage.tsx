@@ -1,4 +1,3 @@
-import React from "react";
 import NotFoundSection from "../../sections/NotFound/NotFoundSection";
 
 const NotFoundPage: React.FC = () => {

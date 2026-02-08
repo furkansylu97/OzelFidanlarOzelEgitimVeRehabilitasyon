@@ -1,4 +1,3 @@
-import React from "react";
 import typesImage from "../../../../assets/images/home/hero/slide-3.jpg";
 import { languageAndSpeechDisorderTypes } from "../../data/LanguageAndSpeechDisorderTypes/languageAndSpeechDisorderTypes";
 

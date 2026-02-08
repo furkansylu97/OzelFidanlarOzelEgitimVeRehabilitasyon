@@ -1,4 +1,3 @@
-import React from "react";
 import downSyndromeImage from "../../../../assets/images/home/hero/slide-7.jpg";
 import { downSyndrome } from "../../data/DownSyndrome/downSyndrome";
 

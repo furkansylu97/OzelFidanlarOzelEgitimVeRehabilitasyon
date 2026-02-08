@@ -1,4 +1,3 @@
-import React from "react";
 import EventsSection from "../../sections/Events/EventsSection";
 
 const EventsPage: React.FC = () => {

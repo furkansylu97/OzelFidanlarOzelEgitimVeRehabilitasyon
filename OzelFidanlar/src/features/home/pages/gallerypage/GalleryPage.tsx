@@ -1,4 +1,3 @@
-import React from "react";
 import GallerySection from "../../sections/Gallery/GallerySection";
 import MediaHighlightSection from "../../sections/Gallery/MediaHighlightSection";
 

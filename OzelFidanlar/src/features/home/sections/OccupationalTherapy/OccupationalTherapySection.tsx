@@ -1,4 +1,3 @@
-import React from "react";
 import occupationalTherapyImage from "../../../../assets/images/home/hero/slide-8.jpg";
 import { occupationalTherapy } from "../../data/OccupationalTherapy/occupationalTherapy";
 

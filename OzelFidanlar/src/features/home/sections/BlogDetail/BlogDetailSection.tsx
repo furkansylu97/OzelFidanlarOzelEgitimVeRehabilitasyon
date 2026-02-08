@@ -1,4 +1,3 @@
-import React from "react";
 import heroDefault from "../../../../assets/images/home/hero/slide-9.jpg";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";

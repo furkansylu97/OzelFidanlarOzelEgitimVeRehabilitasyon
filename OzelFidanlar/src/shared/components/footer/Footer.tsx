@@ -1,4 +1,3 @@
-import React from "react";
 import FooterImage from "../../../assets/images/home/footer/footer-bg.jpeg";
 import { Container } from "../container/Container";
 import FooterBrand from "./FooterBrand";

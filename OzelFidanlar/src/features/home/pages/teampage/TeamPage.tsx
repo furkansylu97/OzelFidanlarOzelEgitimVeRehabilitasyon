@@ -1,4 +1,3 @@
-import React from "react";
 import TeamContentSection from "../../sections/Team/TeamContentSection";
 
 const TeamPage: React.FC = () => {

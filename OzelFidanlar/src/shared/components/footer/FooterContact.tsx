@@ -1,4 +1,3 @@
-import React from "react";
 import Mail from "../../../assets/icons/mail.svg";
 import Phone from "../../../assets/icons/phone.svg";
 import Location from "../../../assets/icons/map.svg";

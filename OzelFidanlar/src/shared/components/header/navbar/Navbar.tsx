@@ -1,4 +1,3 @@
-import React from "react";
 import { navData } from "./navData";
 import NavItem from "./NavItem";
 import { Container } from "../../container/Container";

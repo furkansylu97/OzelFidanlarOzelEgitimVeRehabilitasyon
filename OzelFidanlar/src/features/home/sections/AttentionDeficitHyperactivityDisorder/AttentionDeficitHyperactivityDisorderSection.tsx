@@ -1,4 +1,3 @@
-import React from "react";
 import adhdImage from "../../../../assets/images/home/hero/slide-5.jpg";
 import { attentionDeficitHyperactivityDisorder } from "../../data/AttentionDeficitHyperactivityDisorder/attentionDeficitHyperactivityDisorder";
 

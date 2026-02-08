@@ -1,4 +1,3 @@
-import React from "react";
 import TrainingsSection from "../../sections/Trainings/TrainingsSection";
 
 const TrainingsPage: React.FC = () => {

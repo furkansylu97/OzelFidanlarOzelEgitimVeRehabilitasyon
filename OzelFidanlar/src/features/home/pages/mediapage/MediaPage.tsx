@@ -1,4 +1,3 @@
-import React from "react";
 import MediaSection from "../../sections/Media/MediaSection";
 
 const MediaPage: React.FC = () => {

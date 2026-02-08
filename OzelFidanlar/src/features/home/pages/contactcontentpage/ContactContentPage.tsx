@@ -1,4 +1,3 @@
-import React from "react";
 import ContactContentSection from "../../sections/ContactContent/ContactContentSection";
 import ContactHeaderSection from "../../sections/ContactContent/ContactHeaderSection";
 import ContactProcessSection from "../../sections/ContactContent/ContactProcessSection";

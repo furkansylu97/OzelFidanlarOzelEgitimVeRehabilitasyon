@@ -1,4 +1,3 @@
-import React from "react";
 import BlogContentSection from "../../sections/BlogContent/BlogContentSection";
 
 const BlogPage: React.FC = () => {

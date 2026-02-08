@@ -1,4 +1,3 @@
-import React from "react";
 import heroDefault from "../../../../assets/images/home/hero/slide-9.jpg";
 import { Container } from "../../../../shared/components/container/Container";
 import { contactTrust } from "../../data/ContactContent/contactTrust";

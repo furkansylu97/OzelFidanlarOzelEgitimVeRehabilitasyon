@@ -1,4 +1,3 @@
-import React from "react";
 import dyslexiaImage from "../../../../assets/images/home/hero/slide-2.jpg";
 import { dislexiaAndTypes } from "../../data/DyslexiaAndTypes/dyslexiaAndTypes";
 

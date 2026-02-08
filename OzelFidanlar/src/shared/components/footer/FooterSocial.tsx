@@ -1,4 +1,3 @@
-import React from "react";
 import { socialLinks } from "../header/navbar/SocialLinks";
 import FooterMap from "./FooterMap";
 

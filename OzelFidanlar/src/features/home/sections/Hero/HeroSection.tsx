@@ -1,4 +1,3 @@
-import React from "react";
 import HeroCarousel from "../../components/Hero/HeroCarousel";
 import { HeroSlides } from "../../data/Hero/heroSlides";
 

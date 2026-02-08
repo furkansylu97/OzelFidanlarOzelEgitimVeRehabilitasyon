@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Props {
   item: {
     icon: React.ElementType;

@@ -1,4 +1,3 @@
-import React from "react";
 import heroDefault from "../../../../assets/images/home/hero/slide-9.jpg";
 import { activities } from "../../data/Gallery/galleryData";
 import GalleryCard from "../../components/Gallery/GalleryCard";

@@ -1,4 +1,3 @@
-import React from "react";
 import LanguageAndSpeechDisordersSection from "../../sections/LanguageAndSpeechDisorders/LanguageAndSpeechDisordersSection";
 
 const LanguageAndSpeechDisordersPage: React.FC = () => {

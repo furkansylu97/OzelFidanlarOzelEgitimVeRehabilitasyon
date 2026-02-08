@@ -1,4 +1,3 @@
-import React from "react";
 import { DEFAULT_HERO_COLORS } from "./heroButtonColors";
 import slide1 from "../../../../assets/images/home/hero/slide-1.jpg";
 import slide2 from "../../../../assets/images/home/hero/slide-2.jpg";

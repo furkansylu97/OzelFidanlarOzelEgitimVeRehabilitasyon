@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import type { NavItemType } from "./navData";
 import { SlArrowRight } from "react-icons/sl";

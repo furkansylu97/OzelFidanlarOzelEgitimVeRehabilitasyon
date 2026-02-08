@@ -1,4 +1,3 @@
-import React from "react";
 import mediaImage from "../../../../assets/images/gallery/media-1.jpg";
 import { Container } from "../../../../shared/components/container/Container";
 import { FaTv, FaCalendarAlt, FaMicrophone } from "react-icons/fa";

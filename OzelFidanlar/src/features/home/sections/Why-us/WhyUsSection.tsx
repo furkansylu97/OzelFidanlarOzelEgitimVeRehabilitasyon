@@ -1,4 +1,3 @@
-import React from "react";
 import WhyUsItem from "../../components/Why-us/WhyUsItem";
 import { whyUsData } from "../../data/Why-us/whyUsData";
 import { Container } from "../../../../shared/components/container/Container";
