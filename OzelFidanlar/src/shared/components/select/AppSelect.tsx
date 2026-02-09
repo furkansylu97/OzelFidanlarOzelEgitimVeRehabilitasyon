@@ -47,7 +47,7 @@ const AppSelect = ({
                 value={option}
                 className="
                   flex items-center justify-between
-                  min-h-[40px]
+                  min-h-10
                   px-3 lg:px-4 py-1 lg:py-2
                   text-sm lg:text-base
                   text-white

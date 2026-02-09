@@ -13,12 +13,12 @@ const NavItem = ({ item, depth = 0 }: Props) => {
 
   return (
     <li className={`relative ${groupClass}`}>
-      <div className="flex items-center h-8 hover:text-[#74ae38] hover:scale-[1.02] transition-all duration-300">
+      <div className="flex items-center h-8 hover:scale-[1.02] transition-all duration-300">
         {item.to ? (
           <NavLink
             to={item.to}
             className={({ isActive }) =>
-              `whitespace-nowrap transition-colors duration-300 ${
+              `whitespace-nowrap transition-colors duration-300 hover:text-[#74ae38] ${
                 isActive && item.to !== "/" ? "text-[#74ae38]" : "text-white"
               }`
             }
