@@ -5,6 +5,7 @@ import { getBlogs } from "../../service/blog/blogService";
 import type { Blog } from "../../data/Blog/blog";
 import { Container } from "../../../../shared/components/container/Container";
 import Dateicon from "../../../../assets/icons/date.svg";
+import { Helmet } from "react-helmet-async";
 
 const BlogDetailSection = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -55,6 +56,14 @@ const BlogDetailSection = () => {
 
   if (!blog) return null;
 
+  <Helmet>
+    <title>{blog.title} | Blog</title>
+    <meta
+      name="description"
+      content={blog.excerpt || `${blog.title} hakkında detaylı bilgi.`}
+    />
+  </Helmet>;
+
   return (
     <section className="w-full">
       {blog.coverUrl && (
@@ -75,7 +84,11 @@ const BlogDetailSection = () => {
             </h2>
 
             <div className="flex items-center gap-2 lg:gap-3 my-4 lg:my-6">
-              <img src={Dateicon} alt="date" className="h-8 lg:h-10 w-8 lg:w-10" />
+              <img
+                src={Dateicon}
+                alt="date"
+                className="h-8 lg:h-10 w-8 lg:w-10"
+              />
 
               <p className="text-base lg:text-lg text-gray-500 leading-none">
                 {new Date(blog.date).toLocaleDateString("tr-TR", {
@@ -87,7 +100,9 @@ const BlogDetailSection = () => {
             </div>
 
             {blog.excerpt && (
-              <p className="mb-6 lg:mb-8 text-base lg:text-lg text-gray-600">{blog.excerpt}</p>
+              <p className="mb-6 lg:mb-8 text-base lg:text-lg text-gray-600">
+                {blog.excerpt}
+              </p>
             )}
 
             {blog.coverUrl && (

@@ -9,7 +9,7 @@ const TrainingsSection = () => {
       <div className="mb-6 lg:mb-10">
         <img
           src={heroDefault}
-          alt="heroDefault"
+          alt="Fidanlar özel eğitim programları ve terapi hizmetleri"
           className="h-[30vh] md:h-64 lg:h-72 w-full object-cover"
         />
       </div>

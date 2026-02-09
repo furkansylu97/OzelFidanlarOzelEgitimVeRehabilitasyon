@@ -12,7 +12,7 @@ const TeamContentSection = () => {
       <div className="mb-6 md:mb-10">
         <img
           src={heroDefault}
-          alt="heroDefault"
+          alt="Fidanlar Özel Eğitim ve Rehabilitasyon Merkezi uzman kadrosu"
           className="h-[30vh] md:h-64 lg:h-72 w-full object-cover"
         />
       </div>
