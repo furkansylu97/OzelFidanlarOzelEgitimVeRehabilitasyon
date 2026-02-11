@@ -41,7 +41,7 @@ export const navData: NavItemType[] = [
           },
           {
             label: "Disleksi ve Çeşitleri",
-            to: "/trainings/special-learning-disability/dyslexia-types",
+            to: "/trainings/special-learning-disability/dyslexia",
           },
         ],
       },

@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { Blog } from "../../data/Blog/blog";
 
-const API_URL = "http://localhost:1337/api/blogs?populate=cover";
+const API_URL = `${import.meta.env.VITE_STRAPI_URL}/api/blogs?populate=cover`;
 
 export const getBlogs = async (): Promise<Blog[]> => {
   const res = await axios.get(API_URL);
@@ -16,9 +16,9 @@ export const getBlogs = async (): Promise<Blog[]> => {
       date: item.date,
       publishedAt: item.publishedAt,
       coverUrl: item.cover?.formats?.medium?.url
-        ? `http://localhost:1337${item.cover.formats.medium.url}`
+        ? `${import.meta.env.VITE_STRAPI_URL}${item.cover.formats.medium.url}`
         : item.cover?.url
-        ? `http://localhost:1337${item.cover.url}`
+        ? `${import.meta.env.VITE_STRAPI_URL}${item.cover.url}`
         : undefined,
     })
   );
