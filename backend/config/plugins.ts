@@ -5,7 +5,7 @@ export default ({ env }) => ({
       providerOptions: {
         host: env("SMTP_HOST"),
         port: env.int("SMTP_PORT"),
-        secure: false,
+        secure: env.bool("SMTP_SECURE", false),
         auth: {
           user: env("SMTP_USER"),
           pass: env("SMTP_PASS"),

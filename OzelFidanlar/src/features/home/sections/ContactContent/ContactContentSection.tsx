@@ -4,6 +4,7 @@ import ContactInfoItem from "../../components/Contact/ContactInfoItem";
 import { contactInfo } from "../../data/Contact/contactInfo";
 import AppSelect from "../../../../shared/components/select/AppSelect";
 import axios from "axios";
+import { API_BASE_URL } from "../../../../lib/api";
 import { toast } from "react-toastify";
 
 interface FormState {
@@ -88,7 +89,7 @@ const ContactContentSection = () => {
     }
 
     try {
-      await axios.post(`${import.meta.env.VITE_STRAPI_URL}/api/contact`, {
+      await axios.post(`${API_BASE_URL}/api/contact`, {
         data: {
           name: form.name,
           email: form.email,

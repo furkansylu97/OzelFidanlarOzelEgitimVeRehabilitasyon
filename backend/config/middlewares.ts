@@ -1,12 +1,28 @@
-export default [
-  'strapi::logger',
-  'strapi::errors',
-  'strapi::security',
-  'strapi::cors',
-  'strapi::poweredBy',
-  'strapi::query',
-  'strapi::body',
-  'strapi::session',
-  'strapi::favicon',
-  'strapi::public',
-];
+export default ({ env }) => {
+  const isDev = env("NODE_ENV") === "development";
+
+  const allowedOrigins = isDev
+    ? [env("FRONTEND_LOCAL"), env("FRONTEND_URL"), env("FRONTEND_URL_WWW")]
+    : [env("FRONTEND_URL"), env("FRONTEND_URL_WWW")];
+
+  return [
+    "strapi::errors",
+    "strapi::security",
+    "strapi::logger",
+    "global::rate-limit",
+    {
+      name: "strapi::cors",
+      config: {
+        origin: allowedOrigins.filter(Boolean),
+        methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+        credentials: true,
+      },
+    },
+    "strapi::poweredBy",
+    "strapi::query",
+    "strapi::body",
+    "strapi::session",
+    "strapi::favicon",
+    "strapi::public",
+  ];
+};

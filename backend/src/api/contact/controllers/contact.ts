@@ -9,6 +9,16 @@ export default {
       return ctx.badRequest("Zorunlu alanlar eksik");
     }
 
+    const containsHeaderInjection = (value: string) => {
+      return /[\r\n]/.test(value);
+    };
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (containsHeaderInjection(email) || !emailRegex.test(email)) {
+      return ctx.badRequest("Geçersiz email adresi");
+    }
+
     try {
       await strapi
         .service("api::contact.contact")
