@@ -59,27 +59,29 @@ const BlogCard = ({ blog }: Props) => {
                 {blog.excerpt}
               </div>
 
-              <div className="text-sm lg:text-base font-normal text-slate-700 leading-relaxed space-y-2 line-clamp-2">
-                {blog.content
-                  .split("\n")
-                  .filter(Boolean)
-                  .map((line, index) => {
-                    if (line.startsWith("## ")) {
-                      return (
-                        <h4 key={index} className="font-medium text-gray-900">
-                          {line.replace("## ", "")}
-                        </h4>
-                      );
-                    }
-                    if (line.startsWith("### ")) {
-                      return (
-                        <h5 key={index} className="text-gray-900">
-                          {line.replace("### ", "")}
-                        </h5>
-                      );
-                    }
-                    return <span key={index}>{line}</span>;
-                  })}
+              <div className="hidden lg:block text-sm lg:text-base font-normal text-slate-700 leading-relaxed space-y-2">
+                <p className="line-clamp-2">
+                  {blog.content
+                    .split("\n")
+                    .filter(Boolean)
+                    .map((line, index) => {
+                      if (line.startsWith("## ")) {
+                        return (
+                          <h4 key={index} className="font-medium text-gray-900">
+                            {line.replace("## ", "")}
+                          </h4>
+                        );
+                      }
+                      if (line.startsWith("### ")) {
+                        return (
+                          <h5 key={index} className="text-gray-900">
+                            {line.replace("### ", "")}
+                          </h5>
+                        );
+                      }
+                      return <span key={index}>{line}</span>;
+                    })}
+                </p>
               </div>
               <span className="mt-4 lg:mt-6 inline-flex items-center text-sm font-medium text-amber-400">
                 Devamını Oku →

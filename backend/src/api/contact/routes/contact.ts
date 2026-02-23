@@ -6,7 +6,6 @@ export default {
       handler: "contact.send",
       config: {
         auth: false,
-        middlewares: ["global::rate-limit"],
       },
     },
   ],

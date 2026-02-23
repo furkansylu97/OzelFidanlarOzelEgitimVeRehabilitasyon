@@ -1,7 +1,10 @@
-import type { Context } from "koa";
-
 export default {
-  async send(ctx: Context) {
+  async send(ctx: {
+    request: any;
+    badRequest: any;
+    send: any;
+    internalServerError: any;
+  }) {
     const { name, email, phone, service, message } =
       ctx.request.body?.data || {};
 
@@ -24,10 +27,10 @@ export default {
         .service("api::contact.contact")
         .sendMail({ name, email, phone, service, message });
 
-      ctx.send({ success: true });
+      return ctx.send({ success: true });
     } catch (err) {
       strapi.log.error(err);
-      ctx.internalServerError("Mail gönderilemedi");
+      return ctx.internalServerError("Mail gönderilemedi");
     }
   },
 };
